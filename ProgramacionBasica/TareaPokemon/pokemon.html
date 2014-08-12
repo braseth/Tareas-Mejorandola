@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon</title>
+	<script type="text/javascript" src="datosPokemon.js"></script>
+</head>
+<body>
+	<h2 id="nombrePokemon">Pokemon</h2>
+	<p id="datosPokemon">Datos Pokemon</p>
+	<figure width="250px" height="250px"><img src="images/pokebola.png" id="imagenPokemon"/></figure>
+	<script type="text/javascript">
+	var x = prompt("Que pokemon quiere ver? \n Rattata = 0 \n Squirtle = 1 \n Charmander = 2", 0)
+	if(x<=2 && x>=0){
+		inicio(x);
+	}else
+	{
+		alert("No seleccionaste ningun pokemon");
+	}
+	</script>
+</body>
+</html>

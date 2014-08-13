@@ -18,12 +18,12 @@ function inicio(x)
 	squirtle.grito = "Squilo!";
 	var charmander = new Pokemon("Charmander", 100 , 50);
 	charmander.grito = "Char!";
-	//Vector con los pokemon 
+	//Vector con los pokemon ya creados
 	var pokemon = [rattata,squirtle,charmander]
 	//Otorgar informacion a los elementos del html
 	nombrePokemon.innerText = pokemon[x].nombre;
 	imagenPokemon.src = "images/"+pokemon[x].nombre+".png";
-	datosPokemon.innerText = "Vida= " + pokemon[x].vida + "\nAtaque= " + pokemon[x].ataque +
+	datosPokemon.innerText = "Datos del Pokemon:\n\n Vida= " + pokemon[x].vida + "\nAtaque= " + pokemon[x].ataque +
 							 "\n Grito= "+pokemon[x].grito  
 }
 

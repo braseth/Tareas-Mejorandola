@@ -3,19 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokemon</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script type="text/javascript" src="datosPokemon.js"></script>
 </head>
 <body>
-	<h2 id="nombrePokemon">Pokemon</h2>
-	<p id="datosPokemon">Datos Pokemon</p>
+	<div class="u-title"><h2 id="nombrePokemon" class="nombrePokemon">Pokemon</h2></div>
+	<p id="datosPokemon" class="datosPokemon">Datos Pokemon <br/><br/> Vida <br/> Ataque <br/> Grito </p>
 	<figure width="250px" height="250px"><img src="images/pokebola.png" id="imagenPokemon"/></figure>
 	<script type="text/javascript">
-	var x = prompt("Que pokemon quiere ver? \n Rattata = 0 \n Squirtle = 1 \n Charmander = 2", 0)
+	window.onload = function(){
+		cargar();
+	}
+	function cargar(){
+			var x = prompt("Que pokemon quiere ver? \n Rattata = 0 \n Squirtle = 1 \n Charmander = 2", 0)
 	if(x<=2 && x>=0){
 		inicio(x);
 	}else
 	{
 		alert("No seleccionaste ningun pokemon");
+	}
 	}
 	</script>
 </body>

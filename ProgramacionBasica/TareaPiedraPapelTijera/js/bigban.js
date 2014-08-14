@@ -6,15 +6,17 @@ function random (minimo,maximo){
 var piedra = 0;
 var papel = 1;
 var tijera = 2;
+var lagarto = 3;
+var spock = 4;
 
 var opciones = ["Piedra", "Papel", "Tijera", "Lagarto", "Spock"];
 
 var opcionUsuario;
-var opcionMaquina = random(0,3);
+var opcionMaquina = random(0,4);
 
 opcionUsuario = prompt("¿Que eliges? \n Piedra=0, \n Papel=1, \n Tijera=2, \n Lagarto=3, \n Spock=4", 0);
 
-if(opcionUsuario<=3 && opcionUsuario>=0){
+if(opcionUsuario<=4 && opcionUsuario>=0){
 	
 	alert("Elegiste " + opciones[opcionUsuario] + " \n  Y \n" +"Javascript eligio " + opciones[opcionMaquina]);
 	opcionUsuario = opciones[opcionUsuario];
